@@ -38,7 +38,7 @@ def aplicar_estilo():
 
         /* Sidebar */
         section[data-testid="stSidebar"] {
-            background-color: #F8F8F8 !important;
+            background-color: #FFFFFF !important;
             border-right: 1px solid #E0E0E0 !important;
         }
 
@@ -46,7 +46,10 @@ def aplicar_estilo():
         h1, h2, h3 { color: #2E2E2E !important; font-weight: 700 !important; }
         .css-1v3fvcr { font-size: 18px !important; font-weight: 600 !important; }
 
-        /* Ajuste geral */
-        body { background-color: #FAFAFA !important; }
+        /* Fundo geral */
+        body, .main, .block-container {
+            background-color: #F9F9F9 !important;
+            color: #222222 !important;
+        }
         </style>
     """, unsafe_allow_html=True)
