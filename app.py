@@ -1,4 +1,9 @@
-# inicio
+#css
+from utils.styling import aplicar_estilo
+
+aplicar_estilo()
+
+# inicio dashboard
 import streamlit as st
 from services.google_macro import ler_dados
 from pages.dashboard import mostrar_dashboard
