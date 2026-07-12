@@ -9,6 +9,16 @@ from pages.produtos import mostrar_produtos
 
 st.set_page_config(page_title="Mercadinho Pro", layout="wide")
 
+#aparencia
+st.markdown("""
+    <style>
+    body, .main, .block-container {
+        background-color: #F9F9F9 !important;
+        color: #222222 !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Carregar dados
 df_devedores = ler_dados("Clientes")
 df_produtos = ler_dados("Produtos")
