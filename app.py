@@ -3,6 +3,11 @@ from utils.styling import aplicar_estilo
 
 aplicar_estilo()
 
+from services.google_macro import ler_dados, salvar_dados
+
+df_devedores = ler_dados("Clientes")
+df_produtos = ler_dados("Produtos")
+
 # inicio dashboard
 import streamlit as st
 from services.google_macro import ler_dados
