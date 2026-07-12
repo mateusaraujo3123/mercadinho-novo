@@ -19,6 +19,17 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+#barra superior
+st.markdown('<div class="topbar"><h2 style="margin:0; color:white;">🛍️ MERCADINHO PRO</h2><span>🟢 BANCO DE DADOS ATIVO</span></div>', unsafe_allow_html=True)
+
+col_b1, col_b2, col_b3 = st.columns(3)
+with col_b1:
+    st.button("👥 PESSOAS", use_container_width=True)
+with col_b2:
+    st.button("📦 PRODUTOS", use_container_width=True)
+with col_b3:
+    st.button("📈 CONTAS A RECEBER", use_container_width=True)
+
 # Carregar dados
 df_devedores = ler_dados("Clientes")
 df_produtos = ler_dados("Produtos")
