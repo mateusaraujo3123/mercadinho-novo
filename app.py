@@ -3,11 +3,6 @@ from utils.styling import aplicar_estilo
 
 aplicar_estilo()
 
-from services.google_macro import ler_dados, salvar_dados
-
-df_devedores = ler_dados("Clientes")
-df_produtos = ler_dados("Produtos")
-
 # inicio dashboard
 import streamlit as st
 from services.google_macro import ler_dados
@@ -34,6 +29,11 @@ elif menu == "Produtos":
 import pandas as pd
 import requests
 import streamlit as st
+
+from services.google_macro import ler_dados, salvar_dados
+
+df_devedores = ler_dados("Clientes")
+df_produtos = ler_dados("Produtos")
 
 def ler_dados(nome_aba):
     url_macro = st.secrets["connections"]["gsheets"]["macro_url"]
